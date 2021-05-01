@@ -1,0 +1,32 @@
+<section class="calculator">
+    <input type="text" class="screen" [value]="currentNumber" disabled>
+
+    <div class="buttons">
+
+        <button type="button" value="9" (click)="getChosenNumber('9')">9</button>
+        <button type="button" value="8" (click)="getChosenNumber('8')">8</button>
+        <button type="button" value="7" (click)="getChosenNumber('7')">7</button>    
+        <button type="button" value="exp" class="operator" (click)="getOperator('^')">^</button>
+
+        <button type="button" value="6" (click)="getChosenNumber('6')">6</button>
+        <button type="button" value="5" (click)="getChosenNumber('5')">5</button>
+        <button type="button" value="4" (click)="getChosenNumber('4')">4</button>
+        <button type="button" value="+" class="operator" (click)="getOperator('+')">+</button>
+   
+        <button type="button" value="3" (click)="getChosenNumber('3')">3</button>
+        <button type="button" value="2" (click)="getChosenNumber('2')">2</button>        
+        <button type="button" value="1" (click)="getChosenNumber('1')">1</button>
+        <button type="button" value="-" class="operator" (click)="getOperator('-')">-</button>
+
+        <button type="button" value="0" (click)="getChosenNumber('0')">0</button>
+        <button type="button" value="." class="decimalNumber" (click)="setDecimalNumber()">.</button>
+        <button type="button" value="x" class="operator" (click)="getOperator('*')">&times;</button>        
+
+
+        <button type="button" value="/" class="operator" (click)="getOperator('/')">&divide;</button>
+
+
+        <button type="button" value="clear" class="btn-clear" (click)="resetCalculation()">AC</button>
+        <button type="button" value="=" class="btn-equal" (click)="getOperator('=')">=</button>
+    </div>
+</section>
